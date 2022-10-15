@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YassirMoviesApp</string>
+    <string name="chargement_en_cours">Chargement en cours</string>
+    <string name="aucun_film_disponible">Aucun film disponible</string>
+    <string name="actualiser">Actualiser</string>
+    <string name="nos_films">Nos films</string>
+    <string name="verifier_votre_connexion_internet">Veuillez vérifier votre connexion internet</string>
+    <string name="budget">Budget :</string>
+    <string name="revenus">Revenus :</string>
+    <string name="ajouter_film_favoris">Ajouter film favoris</string>
+    <string name="mes_films_favoris">Mes films favoris</string>
+    <string name="recherche">Recherche</string>
+</resources>

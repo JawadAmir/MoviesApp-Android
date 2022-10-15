@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Yasir Movies</string>
+    <string name="chargement_en_cours">Loading</string>
+    <string name="aucun_film_disponible">No movie available</string>
+    <string name="actualiser">Refresh</string>
+    <string name="nos_films">Our movies</string>
+    <string name="verifier_votre_connexion_internet">Please check your internet connection.</string>
+    <string name="budget">Budget :</string>
+    <string name="revenus">Revenus :</string>
+    <string name="ajouter_film_favoris">Add favorite movie</string>
+    <string name="mes_films_favoris">Our favorites movies</string>
+    <string name="recherche">Search</string>
+</resources>

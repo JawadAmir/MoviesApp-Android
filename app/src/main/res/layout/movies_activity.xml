@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListScreen.MoviesMain">
+
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/nunito_sans"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:layout_marginTop="8dp"
+        android:paddingVertical="4dp"
+        android:layout_marginHorizontal="12dp"
+        android:text="@string/nos_films"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/favoris_iv_container"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headerTitle"
+        app:layout_constraintBottom_toBottomOf="@id/headerTitle"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="12dp"
+        android:backgroundTint="@color/greyLight"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/favoris_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/heart_lottie"
+            app:lottie_progress="0"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/recherche_iv_container"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintEnd_toStartOf="@id/favoris_iv_container"
+        app:layout_constraintTop_toTopOf="@id/headerTitle"
+        app:layout_constraintBottom_toBottomOf="@id/headerTitle"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="12dp"
+        android:backgroundTint="@color/greyLight"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/recherche_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/loop_lottie"
+            android:padding="8dp"
+            app:lottie_progress="0"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/headerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/greyLight"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/moviesRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="12dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/chargementItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerTitle"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/chargement_en_cours"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <!--Aucun items-->
+    <LinearLayout
+        android:id="@+id/aucunContenuTrouver"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerTitle">
+
+        <TextView
+            android:id="@+id/textAucunItem"
+            android:elevation="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:text="@string/aucun_film_disponible"
+            android:textColor="@color/greyDark"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnAucuneItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/bleuDark"
+            android:paddingHorizontal="6dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:text="@string/actualiser"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

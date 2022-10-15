@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222831</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#ffc93c</color>
+    <color name="yellowDark">#ffc93c</color>
+    <color name="greyDark">#adadad</color>
+    <color name="greyDarker">#808080</color>
+    <color name="greyDarkerLowOpacity">#66808080</color>
+    <color name="darkColor">#272727</color>
+
+    <color name="greyLight">#EEEEEE</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bleuDark">#003090</color>
+    <color name="bleuLight">#F32448FF</color>
+    <color name="bleuLightvu">#4fc3f7</color>
+    <color name="yellowLight">#ffff99</color>
+    <color name="red">#cc0000</color>
+    <color name="bg_grey">#80ECECEC</color>
+    <color name="icon_color" >#757575</color>
+
+    <color name="color1">#424549</color>
+    <color name="color2">#7e455e</color>
+    <color name="color3">#796e25</color>
+    <color name="color4">#59717c</color>
+
+
+
+
+    <color name="bg_fragment">#f9f7f7</color>
+    <color name="grey_low_opacity">#40AFAFAF</color>
+    <color name="green">#329932</color>
+    <color name="red_low_opacity">#AEFF1919</color>
+    <color name="red1">#BFFF1919</color>
+    <color name="gold_light">#F7EF8A</color>
+    <color name="gold">#AE8625</color>
+    <color name="low_opacity_color">#1A000000</color>
+    <color name="grey">#4DFFFFFF</color>
+    <color name="black_88">#88000000</color>
+    <color name="white_grey">#E0EAFC</color>
+    <color name="white_grey_dark">#E1E7F1</color>
+    <color name="black_4D">#4D000000</color>
+    <color name="blue_cyan">#3DDC84</color>
+    <color name="white_33">#33FFFFFF</color>
+    <color name="black_D7">#D7000000</color>
+    <color name="black_2A">#2A000000</color>
+    <color name="black_19">#19000000</color>
+    <color name="grey_4f">#4FBDBDBD</color>
+    <color name="grey_1d">#1DBDBDBD</color>
+    <color name="golden">#AF8C35</color>
+    <color name="blue_facebook">#3b5998</color>
+    <color name="grey_bg">#d2d2d2</color>
+    <color name="grey_cc">#CCADADAD</color>
+    <color name="red_b0">#B04632</color>
+    <color name="black_57">#57000000</color>
+    <color name="grey_ef">#EFEFEF</color>
+    <color name="cyan_6f">#6FE2B3</color>
+    <color name="grey_1a">#1AC5C5C5</color>
+    <color name="white_aa">#AAFFFFFF</color>
+    <color name="white_cc">#CCFFFFFF</color>
+    <color name="red_f4">#f44242</color>
+    <color name="white_red">#ffeaea</color>
+
+
+    <color name="green_light">#00FF00</color>
+    <color name="red_light">#ff0000</color>
+
+</resources>
